@@ -1,0 +1,12 @@
+#box {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  background-color: #7aa874;
+  /* border: 2px solid black; */
+  margin: 10px auto;
+  box-shadow: 5px 3px 8px black;
+}
+/* x-offset: 5px; distance of shadow along x-axis
+y-offset: 3px; distance of shadow along y-axis 
+bbur radius: 8px; how much blurness will be there and how much distance the blur takes place*/

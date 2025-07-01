@@ -1,0 +1,215 @@
+/* #container {
+  height: 600px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+In case of baseline; If there multiple sized divs available with texts, then those divs will be arranged in such a way (some divs will goes up ,some goes down) that all the contents within the divs will appear in same height. 
+that's how priority will be given to the content(text) baseline rather than the div sizes.  */
+
+/* whatever the justify-content does it is along the main axis and the same work align-content does in the cross axis. */
+
+/* #container {
+  height: 600px;
+  width: 70%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+here, main axis is L to R ,cross axis is top to bottom, so all the divs will be aligned from the top acc to flex-start */
+
+/* #container {
+  height: 600px;
+  width: 70%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+} 
+item alligns in the bottom*/
+
+/* #container {
+  height: 600px;
+  width: 70%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+item alligns in the center */
+
+/* #container {
+  height: 600px;
+  width: 70%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+in case align-content: flex-start; in column direction ;main axis is top to bottom & cross axis is L to R. so sue to flex-start all items will be aligned in the start of cross axis means L most side  */
+
+/* #container {
+  height: 600px;
+  width: 70%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+in case align-content: flex-end; in column direction ;main axis is top to bottom & cross axis is L to R. so sue to flex-start all items will be aligned in the end of cross axis means R most side   */
+
+/* #container {
+  height: 600px;
+  width: 70%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+all space will be in between the items; no space will there in the L & R most position. */
+
+/* #container {
+  height: 600px;
+  width: 70%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+} */
+
+#container {
+  height: 600px;
+  width: 70%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: baseline;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}

@@ -1,0 +1,53 @@
+section {
+  margin-top: 100px;
+}
+.Transform {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  background-color: #7aa874;
+  border: 2px solid black;
+  margin: 10px auto;
+}
+.Transform:nth-of-type(2n) {
+  background-color: #f7db6a;
+}
+.Transform:nth-of-type(3n) {
+  background-color: #ebb02d;
+}
+
+/* transform */
+#one {
+  /* transform: rotate(180deg);
+  transform: rotate(90deg);
+  transform: rotate(45deg); */
+  transform: rotate(-45deg);
+}
+/* After applying transform property on any element , that property will not only work on the outer substance that will work on the inner content also. */
+
+#two {
+  /* transform: scale(2); */
+  /* transform: scale(0.5);
+  transform: scale(2, 2);
+  transform: scale(0.5, 2); */
+  transform: scaleX(2);
+  /* transform: scaleY(2); */
+}
+
+#three {
+  transform: translate(100px, 100px);
+  transform: translatex(100px);
+  transform: translatex(-100px);
+}
+
+#four {
+  transform: skew(30deg);
+  /* transform: skew(-30deg);
+  transform: skew(90deg);
+  transform: skew(-90deg);
+  transform: skew(180deg); */
+}
+
+#five {
+  transform: rotate(45deg) translatex(100px);
+}

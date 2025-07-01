@@ -1,0 +1,48 @@
+div {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  text-align: center;
+  border: 3px solid black;
+  margin: 20px;
+  display: inline-block;
+}
+
+#static {
+  background-color: yellow;
+  position: static;
+  top: 100px;
+  left: 100px;
+}
+
+#relative {
+  background-color: yellow;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  /* these are top-offset & left-offset */
+}
+
+/* Absolute means it will be positioned relative to the document if its parent have no proper position; the center point will be top-left most corner of the document. */
+#Absolute {
+  background-color: yellow;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  /* these are top-offset & left-offset */
+}
+/* no space is allocated for the absolute positioned element; but in case of relative positioned element, yes a space is allocated then if the element is shifted from its original space then a blank space will be there in the space of relative positioned element. */
+
+#fixed {
+  background-color: yellow;
+  position: fixed;
+  top: 100px;
+  left: 100px;
+}
+
+#sticky {
+  background-color: yellow;
+  position: sticky;
+  top: 0px;
+  left: 200px;
+}

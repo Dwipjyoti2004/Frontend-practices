@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Align self</title>
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body>
+    <h1>Flexbox playground</h1>
+    <div id="container">
+      <div style="background-color: #9400d3">violet</div>
+      <div style="background-color: #4b0082">indigo</div>
+      <div style="background-color: #0000ff; height: 75px">blue</div>
+      <div style="background-color: #00ff00">green</div>
+      <div style="background-color: #ffff00">yellow</div>
+      <div
+        style="background-color: #ff7f00; height: 200px; font-size: 3.5em"
+        id="org"
+      >
+        orange
+      </div>
+      <div style="background-color: #f00">Red</div>
+    </div>
+  </body>
+</html>
+
+<!-- previously all the items and spaces were aligned acc to the size of the
+container, but if we want to align individual item along its cross axis, then we
+will use align-self. Now align-self acts same as the align-items; the difference
+is align-items is for groups and align-self is for individual. priority:
+align-self > align-item. -->

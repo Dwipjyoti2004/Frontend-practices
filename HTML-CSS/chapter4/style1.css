@@ -1,0 +1,35 @@
+/*
+Diff b/w alpha zero & opacity zero.
+#alpha {
+  height: 200px;
+  width: 200px;
+  background-color: #1aff00df;
+  background-color: rgba(26, 255, 0, 0);
+  border: 5px solid black;
+}
+div {
+  height: 200px;
+  width: 200px;
+}
+#opacity {
+  background-color: #ffa511;
+  opacity: 0;
+  border: 5px solid black;
+} */
+
+/* Diff between alpha:0.5 & opacity:0.5 ; alpha value decrease the intensity of the background colour only; whereas opacity decrease the intensity of the backgrouond colour as well as the whole element. */
+#alpha {
+  height: 200px;
+  width: 200px;
+  background-color: rgba(26, 255, 0, 0.5);
+  border: 5px solid black;
+}
+div {
+  height: 200px;
+  width: 200px;
+}
+#opacity {
+  background-color: #ffa511;
+  opacity: 0.5;
+  border: 5px solid black;
+}

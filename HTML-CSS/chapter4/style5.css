@@ -1,0 +1,13 @@
+#box {
+  width: 400px;
+  height: 200px;
+  text-align: center;
+  background-color: #7aa874;
+  margin: 10px auto;
+  color: white;
+  background-image: url(cat.jpg);
+  /* background-size: contain;
+  background-size: auto; */
+  background-size: cover;
+  /* generally we use background-size: as cover */
+}

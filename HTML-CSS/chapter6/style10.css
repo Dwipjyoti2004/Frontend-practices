@@ -1,0 +1,25 @@
+.box {
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  background-color: pink;
+}
+
+.one {
+  background-color: aquamarine;
+  position: relative;
+  z-index: 1;
+}
+
+.two {
+  background-color: darksalmon;
+  position: relative;
+  bottom: 50px;
+  z-index: 2;
+}
+
+/* if the element has default or static position then the z-index can't be changed for that element. 
+z-index value can be set as positive or negetive too.
+the more z-index value will be +ve the more it will goes up from the plane.the more z-index value will be -ve the more it will go lower the plane.
+z-index is set by default as 0(auto).
+*/

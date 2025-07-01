@@ -1,0 +1,20 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-variation-settings: "wdth" 100;
+}
+
+/* .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+} */
+
+.settings {
+  font-size: 48px;
+  color: red;
+}
+.delete {
+  font-size: 24px;
+  color: blue;
+}

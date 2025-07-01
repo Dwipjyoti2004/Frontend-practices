@@ -1,0 +1,263 @@
+/* 1.flex-basis 
+#container {
+  height: 600px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+#org {
+  align-self: flex-start;
+  flex-basis: 50px;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+}
+here due to flex-direction: row; main axis is L to R, thats why orange div will take width of 50px atmost. */
+
+/* #container {
+  height: 600px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+#org {
+  align-self: flex-start;
+  flex-basis: 50px;
+}
+#blue {
+  flex-basis: 400px;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+}
+here due to flex-direction: column; main axis is top to bottom, thats why orange div will take height of 50px atmost.  */
+
+/* 2.flex-grow
+#container {
+  height: 600px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+#org {
+  align-self: flex-start;
+  flex-grow: 1;
+}
+#blue {
+  flex-grow: 1;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 50px;
+  color: white;
+  text-align: center;
+}
+here blue and orange divs occupying the free width space in equal proportion */
+
+/* #container {
+  height: 600px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+#org {
+  align-self: flex-start;
+  flex-grow: 1;
+}
+#blue {
+  flex-grow: 2;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 50px;
+  color: white;
+  text-align: center;
+}
+here blue div occupying the free width space in double than the orange div. */
+
+/* #container {
+  height: 600px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+#org {
+  align-self: flex-start;
+  flex-grow: 1;
+}
+#blue {
+  flex-grow: 3;
+  max-width: 400px;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 50px;
+  color: white;
+  text-align: center;
+}
+here blue width will not exceed 400px; with the increase of the size of the screen, the extra space will be occupied by the orange div further. */
+
+/* #container {
+  height: 600px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+#org {
+  align-self: flex-start;
+  flex-grow: 1;
+}
+#blue {
+  flex-grow: 3;
+  min-width: 400px;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 50px;
+  color: white;
+  text-align: center;
+}
+here blue width will take min 400px; with the decrease of the size of the screen, the blue div will always take 400px atmin. */
+
+/* #container {
+  height: 600px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+#org {
+  align-self: flex-start;
+}
+#blue {
+  flex-shrink: 2;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+}
+flex-shrink: 1; is for every element by default. */
+
+/* #container {
+  height: 600px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+#org {
+  align-self: flex-start;
+  flex-shrink: 1;
+}
+#blue {
+  flex-shrink: 3;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;*/
+/* width: 300px; */
+/* color: white;
+  text-align: center;
+}  */
+
+#container {
+  height: 600px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+#org {
+  align-self: flex-start;
+  flex: 2 2 100px;
+}
+#blue {
+  flex-shrink: 2;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+}

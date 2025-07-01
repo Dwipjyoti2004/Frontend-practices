@@ -1,0 +1,59 @@
+/* h1 {
+  color: rgb(255, 0, 0);
+  background-color: black;
+}
+
+p {
+  color: blue;
+  background-color: bisque;
+}
+
+button {
+  color: #ffff00;
+  background: rgb(0, 0, 0);
+   this background and background-color property acts same but background property can be used for too many properties. with the help of background property we can set the background image also etc.
+  thats why to set the background color specifically we will use the backgrgound-color property.  
+} */
+
+h1 {
+  text-align: center;
+  /* this right is not acc to the whole document's right side, this right side is acc to the parent element's right side. */
+  border: solid;
+  width: 50%;
+  /* text-decoration: underline; */
+  text-decoration: wavy red underline;
+  letter-spacing: 10px;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+  text-align: start;
+  text-decoration: line-through;
+}
+p {
+  text-align: justify;
+  font-weight: bold;
+  line-height: 2.5;
+  font-size: 15px;
+}
+h2 {
+  font-weight: 100;
+  /* text-decoration: overline; */
+  text-decoration: double blue overline;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+h4 {
+  font-family: league spartan;
+  color: #ffa511;
+  text-align: center;
+  font-size: 55px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-decoration: teal double underline;
+  text-transform: uppercase;
+}

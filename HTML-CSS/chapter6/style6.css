@@ -1,0 +1,74 @@
+.box {
+  height: 100px;
+  width: 300px;
+  background-color: pink;
+
+  /* animation-name: fontAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0;
+  animation-iteration-count: 3;
+  animation-direction: alternate; 
+  animation: fontAnimation 2s ease-in 0s 3 alternate;*/
+
+  /* animation-name: colourAnimate;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation: colourAnimate 2s ease-in 0s infinite normal; */
+
+  /* animation-name: widthAnimate;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction: normal; 
+  animation: widthAnimate 3s ease-in 0s infinite normal;*/
+
+  animation: colour-widthAnimate 3s ease-in 0s infinite normal;
+}
+
+@keyframes fontAnimation {
+  from {
+    font-size: 20px;
+  }
+  to {
+    font-size: 40px;
+  }
+}
+
+/* @keyframes colourAnimate {
+  from {
+    background-color: green;
+  }
+  to {
+    background-color: blue;
+  }
+}
+@keyframes widthAnimate {
+  from {
+    width: 50px;
+  }
+  to {
+    width: 100px;
+  }
+} */
+
+@keyframes colour-widthAnimate {
+  from {
+    width: 100px;
+    background-color: green;
+  }
+  to {
+    width: 200px;
+    background-color: blue;
+    border-radius: 15px;
+  }
+}
+
+/* we cant use multiple animation function like
+animation: widthAnimate 3s ease-in 0s infinite normal;
+animation: colourAnimate 3s ease-in 0s infinite normal; 
+both at a time*/

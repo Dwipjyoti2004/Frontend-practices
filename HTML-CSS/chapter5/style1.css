@@ -1,0 +1,366 @@
+/* #container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+} */
+
+/* flex-direction: row; by default  */
+
+/* #container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 100px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+} */
+/* here, in case of row-reverse direction, main axis is from right to left; thus flex-start justifies spaces for elements from the starting of the main axis means from the right end and so along. */
+
+/* #container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 100px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+} */
+/* here, in case of row-reverse direction, main axis is from right to left; thus flex-end justifies spaces for elements from the ending of the main axis means from the left end and so along. */
+
+/* #container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 20px;
+  width: 100px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+} */
+/* here, in case of column-reverse direction, main axis is from bottom to top; thus flex-end justifies spaces for elements from the ending of the main axis means from the top end and so along. */
+
+/* #container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 20px;
+  width: 100px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+} */
+
+/* #container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 100px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+} 
+in this case of space-between,spaces are in between of items and no right & left most space is shown. */
+
+/* #container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 100px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+in this case of space-around ,right and left most space is half of the in between spaces.  */
+
+/* #container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 100px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+in this case of space-evenly ,right and left most space is same as the in between spaces.  */
+
+/* #container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+no change will be seen here, cause by default flex-wrap is set to be nowrap;and thats why items will be managed to be fit in the container by changing its width lesser than 300px. */
+
+/* #container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+  it wraps the items along cross axis.
+  wrapping will be seen items having its originial width will be fit in in a row in the maximum possible number, rest items will be aligned from the next row  */
+
+/* #container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap-reverse;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+} 
+wrap-reverse reverses the direction along the cross axis. 
+here main axis is L to R , so cross axis is top to bottom,so the reverses will be bottom to top;and wrapping will take place from bottom to top. */
+
+/* #container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+here main axis is bottom to top,so items will be wrapped upto a certain number of items which properly fits according to the height opf the container. */
+
+/* #container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  flex-wrap: wrap-reverse;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+here, main axis is bottom to top & cross axis is L to R,so wrap-reverse reverses items along cross axis.
+Thus wrapping will be from R to L along cross axis. */
+
+/* #container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 50px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+ here, main axis is along row,L to R ;& cross axis is top to bottom. now after doing align-items: flex-start, items will be aligned from the top. cause align-items align items along cross axis;
+*/
+
+/* #container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 50px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+here, main axis is along row,L to R ;& cross axis is top to bottom. now after doing align-items: flex-end, items will be aligned from the bottom. cause align-items align items along cross axis;
+*/
+/* cause items will move when there space will be available along the cross axis between the items. */
+
+#container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 50px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}

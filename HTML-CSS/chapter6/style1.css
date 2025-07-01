@@ -1,0 +1,116 @@
+/* .container {
+  width: 600px;
+  height: 300px;
+  background-color: black;
+  display: grid;
+  grid-template-rows: 50px 50px 50px 50px;
+} */
+
+/* .container {
+  width: 600px;
+  height: 300px;
+  background-color: black;
+  display: grid;
+  grid-template-rows: 50px 50px 50px 50px;
+  grid-template-columns: 100px 100px 100px;
+} */
+
+/* .container {
+  width: 600px;
+  height: 300px;
+  background-color: black;
+  display: grid;
+  grid-template-rows: 50px 50px 50px 50px;
+  grid-template-columns: auto;
+}
+one auto means one column */
+
+/* .container {
+  width: 600px;
+  height: 300px;
+  background-color: black;
+  display: grid;
+  grid-template-rows: 50px 50px 50px 50px;
+  grid-template-columns: auto auto;
+}
+two auto means two columns of equal width.
+no of auto= no of column */
+
+/* .container {
+  width: 600px;
+  height: 300px;
+  background-color: black;
+  display: grid;
+  grid-template-rows: 50px 50px 50px 50px;
+  grid-template-columns: auto auto auto;
+}
+three auto means three columns of equal width.
+no of auto= no of column */
+
+/* note: in general by using auto,
+  space is equally divided into no of the auto is used. but in every cases this will not happen, cause auto doesn't mean to divide the space equally, it depends on how much content is there in the element,that content will overflow from the element or not these are considerable.
+  That's why auto is not prefferable we will mention the actual size.and if in case we use auto then that will be in terms of remaining spaces(to create tracks automatically in the remaining spaces.)
+  */
+
+/* .container {
+  width: 600px;
+  height: 300px;
+  background-color: yellow;
+  display: grid;
+  grid-template-rows: 50px 50px 50px 50px;
+  grid-template-columns: 200px 200px 200px;
+}
+.item {
+  background-color: greenyellow;
+  border: 2px solid black;
+  text-align: center;
+} */
+/* width: 100px;
+  height: 50px; */
+/* if proper height , width are not mentioned for the items then each of items will occupy each of whole cells.  */
+
+/* .container {
+  width: 600px;
+  height: 300px;
+  background-color: yellow;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+.item {
+  background-color: greenyellow;
+  border: 2px solid black;
+  text-align: center;
+} */
+
+/* .container {
+  width: 600px;
+  height: 300px;
+  background-color: yellow;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+.item {
+  background-color: greenyellow;
+  border: 2px solid black;
+  text-align: center;
+}
+First 4 rows will only have equal height.
+cause 4<5, total 5 items there from which first 4 will have equall height ,5th item will have different height*/
+
+.container {
+  width: 600px;
+  height: 300px;
+  background-color: yellow;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
+}
+.item {
+  background-color: greenyellow;
+  border: 2px solid black;
+  text-align: center;
+}
+/* 6>5; here 6 rows will have equal height from which first 5 rows will occupied by 5 items and last row will be free. */
+
+/* note: if items are needed to be arranged in just one direction either in rows or in columns then use flexbox model; or if we need to design a layout where rows & columns both are needed then we will use grid model. */

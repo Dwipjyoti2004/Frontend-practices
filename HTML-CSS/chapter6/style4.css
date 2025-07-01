@@ -1,0 +1,27 @@
+.container {
+  width: 600px;
+  height: 300px;
+  background-color: yellow;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.item {
+  /* width: 100px;
+  height: 50px; */
+  background-color: greenyellow;
+  border: 2px solid black;
+  text-align: center;
+}
+/* if height and width are not commended out then mentioned cells in span are not occupied by the item but but will be reserved for that item so that no other item cal occupy those cells. */
+.one {
+  grid-column: 1 / span 2;
+}
+
+.two {
+  /* grid-row-start: 1;
+  grid-row-end: 4; */
+  /* grid-row: 1/4; */
+  grid-row: 1 / span 3;
+}
