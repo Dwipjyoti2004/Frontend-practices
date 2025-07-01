@@ -1,0 +1,24 @@
+/* h2 {
+  display: inline;
+}
+span {
+  display: block;
+} */
+
+span {
+  background-color: lime;
+  border: 2px solid black;
+  height: 100px;
+  width: 200px;
+  padding: 50px;
+  margin: 20px;
+}
+/* For span elements, padding and margin is only set for left and right elements not in top and bottom. height and width are never set. */
+
+div {
+  border: 2px solid black;
+  height: 100px;
+  width: 200px;
+  padding: 50px;
+  margin: 20px;
+}

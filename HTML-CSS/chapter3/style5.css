@@ -1,0 +1,19 @@
+h1 {
+  border: 2px solid black;
+  width: 33.33%;
+}
+
+#outer {
+  height: 100px;
+  width: 100px;
+  background-color: pink;
+  margin: 50px;
+}
+
+#inner {
+  height: 40px;
+  width: 40px;
+  background-color: cornflowerblue;
+  margin-left: 10%;
+}
+/* left margin of this inner div is 10% w.r.t its parent outer div size. */

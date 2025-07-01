@@ -1,0 +1,23 @@
+/* div {
+  height: 200px;
+  width: 200px;
+  background-color: greenyellow;
+  border: 2px solid black;
+  margin: 5px;
+  display: inline;
+} */
+
+div {
+  height: 200px;
+  width: 200px;
+  background-color: greenyellow;
+  border: 2px solid black;
+  margin: 5px;
+  display: inline-block;
+}
+/* display: inline; it is not applicable here cause while making it's display inline the height,width,background-color, top & bottom margins are not applicable.  */
+
+/* #third {
+  display: none;
+} */
+/* To hide any element temporarily we can make the display as none. */
