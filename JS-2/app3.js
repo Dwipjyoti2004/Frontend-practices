@@ -48,7 +48,7 @@ function checkAns(idx) {
     }
   } else {
     highScore = level > highScore ? level : highScore;
-    h2.innerHTML = `Game over! your score was <b>${level}</b>.<br> press any key to start.<br> High score was ${highScore}`;
+    h2.innerHTML = `Game over! your score is <b>${level}</b>.<br> press any key to start.<br> High score is ${highScore}`;
     document.querySelector("body").style.backgroundColor = "red";
     setTimeout(function () {
       document.querySelector("body").style.backgroundColor = "white";
