@@ -64,6 +64,7 @@ async function demo() {
 }
 demo();
 
+/*
 h1 = document.querySelector("h1");
 function changeColor(color, delay) {
   return new Promise((resolve, reject) => {
@@ -80,4 +81,69 @@ async function color() {
   await changeColor("green", 1000);
   changeColor("blue", 1000);
 }
-color();
+color(); //here no rejection issue can be present; so await keyword can be used by this time. */
+
+/*
+h1 = document.querySelector("h1");
+function changeColor(color, delay) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      let num = Math.floor(Math.random() * 5) + 1;
+      if (num > 3) {
+        reject("promise rejected");
+      }
+      h1.style.color = color;
+      console.log(`color changed to ${color}`);
+      resolve("color changed!");
+    }, delay);
+  });
+}
+async function colors() {
+  await changeColor("red", 1000);
+  await changeColor("orange", 1000);
+  await changeColor("green", 1000);
+  changeColor("blue", 1000);
+
+  let a = 5;
+  console.log(a);
+  console.log("new number = ", a + 3);
+}
+colors(); */
+/*
+color changed to red
+color changed to orange
+color changed to green
+Uncaught (in promise) promise rejected
+due to this uncaught error the remaining part of the code which was not even dependend of the promise has not run too(console.log(a))*/
+
+//solution to handle promises
+h1 = document.querySelector("h1");
+function changeColor(color, delay) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      let num = Math.floor(Math.random() * 5) + 1;
+      if (num > 3) {
+        reject("promise rejected");
+      }
+      h1.style.color = color;
+      console.log(`color changed to ${color}`);
+      resolve("color changed!");
+    }, delay);
+  });
+}
+async function colors() {
+  try {
+    await changeColor("red", 1000);
+    await changeColor("orange", 1000);
+    await changeColor("green", 1000);
+    changeColor("blue", 1000);
+  } catch (err) {
+    console.log("error caught");
+    console.log(err);
+  }
+
+  let a = 5;
+  console.log(a);
+  console.log("new number = ", a + 3);
+}
+colors();
