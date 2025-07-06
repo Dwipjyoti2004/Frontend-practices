@@ -64,7 +64,7 @@ when APIs are called generally we sent our requests with headers and API also gi
 
 let url = "https://catfact.ninja/fact";
 //fetch(url);
-console.log(fetch(url)); //returns promise
+console.log(fetch(url)); //returns promise & those promises get resolved whenever API returns a response along with its header.
 /*Promise {<pending>}
   [[Prototype]]: Promise
   [[PromiseState]]: "fulfilled"
@@ -134,3 +134,60 @@ fetch(url)
     console.log("ERROR - ", err);
   });
 */
+
+fetch(url)
+  .then((res) => {
+    return res.json();
+  })
+  .then((data) => {
+    console.log("data1 = ", data.fact);
+    return fetch(url);
+  })
+  .then((res) => {
+    return res.json();
+  })
+  .then((data) => {
+    console.log("data2 = ", data.fact);
+  })
+  .catch((err) => {
+    console.log("ERROR - ", err);
+  });
+//these calls are asynchrounous means js down't wait till they resolve to run another piece of code written after this.
+console.log("i am happy");
+// here first "i am happy" will print & all API calls will run on backend and whenever those calls get resolved their data got printed.
+
+//fetch(url) with async and await
+async function getFacts() {
+  try {
+    let res = await fetch(url);
+    let data = await res.json();
+    console.log(data.fact);
+
+    let res2 = await fetch(url);
+    let data2 = await res2.json();
+    console.log(data2.fact);
+  } catch (e) {
+    console.log("error - ", e);
+  }
+
+  console.log("bye1");
+}
+getFacts();
+
+let url1 = "https://catfact.ninja/fact1";
+async function getFacts1() {
+  try {
+    let res = await fetch(url1);
+    let data = await res.json();
+    console.log(data.fact);
+
+    let res2 = await fetch(url1);
+    let data2 = await res2.json();
+    console.log(data2.fact);
+  } catch (e) {
+    console.log("error - ", e);
+  }
+
+  console.log("bye2");
+}
+getFacts1(); //whether this url1 link is invalid & will not give proper fact but still this bye2 will be printed on console.
